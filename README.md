@@ -2,9 +2,12 @@
 Gil Mariano
 
 El proyecto tiene 3 modelos. 
-El modelo 1 permite agregar a la base de datos un nombre de un producto y una cantidad
-El modelo 2 permite agregar un problema y la descripcion del mismo
-El modelo 3 permite agregar un correo electronico y una fecha con formato mm/dd/aa
+
+El modelo 1 permite agregar a la base de datos un nombre de un producto y una cantidad.
+
+El modelo 2 permite agregar un problema y la descripcion del mismo.
+
+El modelo 3 permite agregar un correo electronico y una fecha con formato mm/dd/aa.
 
 El agregar los datos en un modelo, automaticamente te lleva a una busqueda de todos los items que hay cargados alli.
 
