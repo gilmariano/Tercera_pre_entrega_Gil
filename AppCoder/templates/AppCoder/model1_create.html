@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h2>Ingresa el nombre del producto y la cantidad</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <div>
+      <label for="{{ form.field1.id_for_label }}">Producto:</label>
+      {{ form.field1 }}
+    </div>
+    <br>
+    <div>
+      <label for="{{ form.field2.id_for_label }}">Cantidad:</label>
+      {{ form.field2 }}
+    </div>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}

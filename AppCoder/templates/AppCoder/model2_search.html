@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Busqueda de problemas reportados</h2>
+<ul>
+  {% for obj in data %}
+    <li>{{ obj.field1 }} - {{ obj.field2 }}</li>
+  {% empty %}
+    <li>No data found.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

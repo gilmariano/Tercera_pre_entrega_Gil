@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form method="GET" action="{% url 'search' %}">
+    <input type="text" name="q" placeholder="Buscar...">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <h2>Resultados de la búsqueda:</h2>
+
+  {% if model1_results %}
+    <h3>Modelo 1</h3>
+    <ul>
+      {% for item in model1_results %}
+        <li>{{ item.field1 }} - {{ item.field2 }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if model2_results %}
+    <h3>Modelo 2</h3>
+    <ul>
+      {% for item in model2_results %}
+        <li>{{ item.field1 }} - {{ item.field2 }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if model3_results %}
+    <h3>Modelo 3</h3>
+    <ul>
+      {% for item in model3_results %}
+        <li>{{ item.field1 }} - {{ item.field2 }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}
